@@ -45,7 +45,7 @@
 
         /* J+K+L (3-key combo): activate trackball gesture recognition.
          * K+Lと被るが、ZMKはより多いキー数の組み合わせが成立するまで
-         * 待つので、J+K+Lが押されればこちらが優先される。 */
+         * 待つので、J+K+Lが押されればこちが優先される。 */
         mouse_gesture_activate {
             bindings = <&mouse_gesture>;
             key-positions = <17 18 19>;
