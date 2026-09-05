@@ -1,6 +1,7 @@
 #include "mona2.dtsi"
 #include <input/processors.dtsi>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <mouse-gesture.dtsi>
 
 
 &default_transform {
@@ -62,20 +63,70 @@
     };
 };
 
+/* Mouse gesture: aerogu34と同じ内容(左右移動=進む/戻る、上下=タブ切替)。
+ * J+K+Lコンボ(keymap側)が押されている間だけ発動する。 */
+&zip_mouse_gesture {
+    stroke-size = <300>;
+    enable-eager-mode;
+    suppress-movement;
+
+    forward {
+        pattern = <GESTURE_RIGHT>;
+        bindings = <&kp LA(RIGHT_ARROW)>;  /* Alt+Right: forward */
+    };
+
+    back {
+        pattern = <GESTURE_LEFT>;
+        bindings = <&kp LA(LEFT_ARROW)>;   /* Alt+Left: back */
+    };
+
+    tab_next {
+        pattern = <GESTURE_UP>;
+        bindings = <&kp LC(TAB)>;          /* Ctrl+Tab: next tab */
+    };
+
+    tab_prev {
+        pattern = <GESTURE_DOWN>;
+        bindings = <&kp LS(LC(TAB))>;      /* Ctrl+Shift+Tab: previous tab */
+    };
+};
 
 // Overrides for the input listener node
 &trackball_central_listener {
     status = "okay";
     device = <&trackball_central>;
 
+    /* デフォルト(SCROLLレイヤー以外)のチェーン:
+     * 元のY軸反転はそのまま維持し、ジェスチャー認識とAML(自動マウス
+     * レイヤー)を追加。aerogu34同様、J/K/Lタイプ直後300msはAMLが
+     * 発動しないようにしてトラボ誤爆を防止(この機能がv0.3-branchの
+     * zip_temp_layerで使えない場合は、下のexcluded-positions/
+     * require-prior-idle-msを削除した簡易版に切り替えてください)。 */
+    input-processors =
+        <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
+        <&zip_mouse_gesture>,
+        <&zip_temp_layer 5 1000>;
+
     scroller {
-        layers = <3>;
+        layers = <6>;
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
+            <&zip_mouse_gesture>,
             <&zip_xy_to_scroll_mapper>,                         //スクロールモードに変更
             <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>,   //スクロールのX軸反転
             <&zip_scroll_scaler 1 5>;                           //スクロール量を1/4倍
     };
+};
 
+/* AML(自動マウスレイヤー)。J/K/Lをタイプした直後300msは発動しない
+ * (トラボ誤爆防止)。前述の通り、v0.3-branchでこのプロパティが
+ * 使えるかは未確認。 */
+&zip_temp_layer {
+    excluded-positions = <
+        17 // J
+        18 // K
+        19 // L
+    >;
+    require-prior-idle-ms = <300>;
 };
