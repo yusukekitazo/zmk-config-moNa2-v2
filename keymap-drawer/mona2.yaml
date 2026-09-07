@@ -177,26 +177,26 @@ layers:
   - Alt+W
   - LEFT GUI
   - Alt+TAB
-  - {t: ▽, type: trans}
-  - {t: BT, h: '0'}
-  - {t: BT, h: '1'}
-  - {t: BT, h: '2'}
-  - {t: BT, h: '3'}
-  - {t: BT, h: '4'}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+F4
+  - Ctl+W
+  - Ctl+T
+  - UP ARROW
+  - Sft+Ctl+TAB
+  - Ctl+TAB
+  - Gui+O
+  - Gui+W
+  - Gui+Ctl+LEFT ARROW
+  - Gui+Ctl+RIGHT ARROW
+  - Alt+E
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
+  - Sft+Ctl+TAB
   - {t: ▽, type: trans}
+  - Gui+/
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Gui+N
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
