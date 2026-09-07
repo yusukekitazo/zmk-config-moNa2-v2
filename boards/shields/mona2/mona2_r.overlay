@@ -98,19 +98,17 @@
     status = "okay";
     device = <&trackball_central>;
 
-    /* デフォルト(SCROLLレイヤー以外)のチェーン:
-     * 元のY軸反転はそのまま維持し、ジェスチャー認識とAML(自動マウス
-     * レイヤー)を追加。aerogu34同様、J/K/Lタイプ直後300msはAMLが
-     * 発動しないようにしてトラボ誤爆を防止(この機能がv0.3-branchの
-     * zip_temp_layerで使えない場合は、下のexcluded-positions/
-     * require-prior-idle-msを削除した簡易版に切り替えてください)。 */
+    /* デフォルト(SCROLLレイヤー以外)のチェーン: MOUSE層は実際にはlayer 1
+     * なので、AMLのターゲットを5(誤り、SCROLLに入っていた)から1に修正。 */
     input-processors =
         <&zip_xy_transform INPUT_TRANSFORM_Y_INVERT>,
         <&zip_mouse_gesture>,
-        <&zip_temp_layer 5 1000>;
+        <&zip_temp_layer 1 1000>;
 
     scroller {
-        layers = <6>;
+        /* SCROLL層は実際にはlayer 5なので、6(誤り、WIRELESSになって
+         * いた)から5に修正。 */
+        layers = <5>;
         input-processors = 
             // <&zip_xy_transform INPUT_TRANSFORM_XY_SWAP>,        //X軸とY軸の入れ替え
             <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>,       //X軸反転
@@ -122,8 +120,7 @@
 };
 
 /* AML(自動マウスレイヤー)。J/K/Lをタイプした直後300msは発動しない
- * (トラボ誤爆防止)。前述の通り、v0.3-branchでこのプロパティが
- * 使えるかは未確認。 */
+ * (トラボ誤爆防止)。 */
 &zip_temp_layer {
     excluded-positions = <
         17 // J
