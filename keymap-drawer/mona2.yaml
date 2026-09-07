@@ -197,8 +197,8 @@ layers:
   - Gui+/
   - {t: ▽, type: trans}
   - Gui+N
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+C
+  - Alt+R
   - {t: ▽, type: trans}
   - '&bootloader'
   - {t: ▽, type: trans}
@@ -210,8 +210,8 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+S
+  - Gui+H
   - {type: held}
   - {t: ▽, type: trans}
   - BT CLR ALL
