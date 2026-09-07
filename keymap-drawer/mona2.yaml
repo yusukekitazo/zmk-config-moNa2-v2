@@ -173,9 +173,9 @@ layers:
   - Ctl+W
   - {t: ▽, type: trans}
   CURSOR1:
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Alt+Q
+  - Alt+W
+  - LEFT GUI
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
