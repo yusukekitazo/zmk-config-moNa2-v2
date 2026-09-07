@@ -176,7 +176,7 @@ layers:
   - Alt+Q
   - Alt+W
   - LEFT GUI
-  - {t: ▽, type: trans}
+  - Alt+TAB
   - {t: ▽, type: trans}
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
