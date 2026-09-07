@@ -189,8 +189,8 @@ layers:
   - Gui+Ctl+RIGHT ARROW
   - Alt+E
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - Ctl+R
+  - LEFT ARROW
   - {t: ▽, type: trans}
   - Sft+Ctl+TAB
   - {t: ▽, type: trans}
