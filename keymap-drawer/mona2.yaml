@@ -296,17 +296,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {type: held}
+  - {type: held}
   - '&bootloader'
   - '&studio_unlock'
   - BT CLR ALL
 combos:
-- p: [39, 38]
-  k: {t: ESC, h: CURSOR1}
-- p: [11, 12]
-  k: TAB
 - p: [18, 19]
   k: '6'
 - p: [17, 18, 19]
   k: '&mouse_gesture'
+- p: [37, 38]
+  k: WIRELESS

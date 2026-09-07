@@ -308,28 +308,21 @@ path.combo {
 <text x="0" y="0" class="key tap">ESCAPE</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 280)" class="layer-5">
@@ -508,28 +501,21 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 560)" class="layer-MARK1">
@@ -709,28 +695,21 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 840)" class="layer-NUM1">
@@ -932,28 +911,21 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1120)" class="layer-CURSOR1">
@@ -1136,28 +1108,21 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1400)" class="layer-6">
@@ -1334,28 +1299,21 @@ path.combo {
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 <g transform="translate(30, 1680)" class="layer-WIRELESS">
@@ -1516,13 +1474,11 @@ path.combo {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(252, 196)" class="key trans keypos-37">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(252, 196)" class="key held keypos-37">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
-<g transform="translate(308, 196)" class="key trans keypos-38">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
-<text x="0" y="0" class="key trans tap">▽</text>
+<g transform="translate(308, 196)" class="key held keypos-38">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
 </g>
 <g transform="translate(420, 196)" class="key keypos-39">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1539,28 +1495,21 @@ path.combo {
 </text>
 </g>
 <g class="combo combopos-0">
-<path d="M364,196 l37,0" class="combo"/>
-<path d="M364,196 l-37,0" class="combo"/>
-<rect rx="6" ry="6" x="350" y="183" width="28" height="26" class="combo"/>
-<text x="364" y="196" class="combo tap">ESC</text>
-<a href="#CURSOR1">
-<text x="364" y="207" class="combo hold layer-activator">CURSOR1</text>
-</a></g>
-<g class="combo combopos-1">
-<rect rx="6" ry="6" x="98" y="71" width="28" height="26" class="combo"/>
-<text x="112" y="84" class="combo tap">TAB</text>
-</g>
-<g class="combo combopos-2">
 <rect rx="6" ry="6" x="602" y="71" width="28" height="26" class="combo"/>
 <a href="#x_x">
 <text x="616" y="84" class="combo tap layer-activator">6</text>
 </a></g>
-<g class="combo combopos-3">
+<g class="combo combopos-1">
 <path d="M588,84 l-37,0" class="combo"/>
 <path d="M588,84 l37,0" class="combo"/>
 <rect rx="6" ry="6" x="574" y="71" width="28" height="26" class="combo"/>
 <text x="588" y="84" class="combo tap"><tspan style="font-size: 64%">&amp;mouse_ges…</tspan></text>
 </g>
+<g class="combo combopos-2">
+<rect rx="6" ry="6" x="266" y="183" width="28" height="26" class="combo"/>
+<a href="#WIRELESS">
+<text x="280" y="196" class="combo tap layer-activator"><tspan style="font-size: 88%">WIRELESS</tspan></text>
+</a></g>
 </g>
 </g>
 </svg>
