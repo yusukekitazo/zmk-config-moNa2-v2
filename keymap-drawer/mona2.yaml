@@ -191,21 +191,21 @@ layers:
   - {t: ▽, type: trans}
   - Ctl+R
   - LEFT ARROW
-  - {t: ▽, type: trans}
-  - Sft+Ctl+TAB
-  - {t: ▽, type: trans}
+  - DOWN ARROW
+  - RIGHT ARROW
+  - Ctl+F
   - Gui+/
   - {t: ▽, type: trans}
   - Gui+N
   - Alt+C
   - Alt+R
   - {t: ▽, type: trans}
-  - '&bootloader'
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - BT CLR
+  - Alt+LEFT ARROW
+  - Alt+RIGHT ARROW
+  - Ctl+Sft+B
+  - Gui+A
+  - Ctl+L
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -214,7 +214,7 @@ layers:
   - Gui+H
   - {type: held}
   - {t: ▽, type: trans}
-  - BT CLR ALL
+  - {t: ▽, type: trans}
   '6':
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
