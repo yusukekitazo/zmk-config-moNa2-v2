@@ -97,29 +97,29 @@ layers:
   - '*'
   - '-'
   - _
-  - '`'
-  - '~'
-  - '"'
-  - ''''
-  - {t: ▽, type: trans}
+  - BRIGHTNESS DEC
+  - BRI UP
+  - VOLUME DOWN
+  - VOLUME UP
+  - Alt+PRINTSCREEN
   - {t: ▽, type: trans}
   - '&mkp MB3'
   - '&mkp MB1'
   - '&mkp MB2'
   - '='
   - +
-  - F1
-  - F2
-  - F3
-  - F4
-  - F5
-  - F11
-  - F12
+  - Ctl+Z
+  - Ctl+X
+  - Ctl+C
+  - Ctl+V
+  - Sft+A
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - F6
   - F7
-  - F8
-  - F9
-  - F10
+  - Sft+,
+  - Sft+.
+  - Sft+/
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
