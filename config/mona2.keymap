@@ -1,11 +1,11 @@
 #include <input/processors.dtsi>
 #include <dt-bindings/zmk/input_transform.h>
 #include <zephyr/dt-bindings/input/input-event-codes.h>
+#include <mouse-gesture.dtsi>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/pointing.h>
-#include <mouse-gesture.dtsi>
 
 #define ZMK_POINTING_DEFAULT_SCRL_VAL 100
 #define MOUSE 5
@@ -36,6 +36,7 @@
         };
 
         /* K+L: enter SCROLL layer (aerogu34と同じ設計) */
+
         scroll {
             bindings = <&mo SCROLL>;
             key-positions = <18 19>;
@@ -46,6 +47,7 @@
         /* J+K+L (3-key combo): activate trackball gesture recognition.
          * K+Lと被るが、ZMKはより多いキー数の組み合わせが成立するまで
          * 待つので、J+K+Lが押されればこちが優先される。 */
+
         mouse_gesture_activate {
             bindings = <&mouse_gesture>;
             key-positions = <17 18 19>;
@@ -60,6 +62,20 @@
             #binding-cells = <1>;
             bindings = <&to 0 &macro_param_1to1 &kp MACRO_PLACEHOLDER>;
             label = "TO_LAYER_0";
+        };
+
+        WINime: WINime {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LEFT_ALT>,
+                <&macro_tap>,
+                <&kp LEFT_SHIFT>,
+                <&macro_release>,
+                <&kp LEFT_ALT>;
+
+            label = "WINIME";
         };
     };
 
@@ -95,10 +111,10 @@
 
         default_layer {
             bindings = <
-&kp Q             &kp W         &kp E    &kp R          &kp T                                                          &kp Y        &kp U  &kp I      &kp O    &kp P
-&kp A             &kp S         &kp D    &kp F          &kp G                                  &kp F13                 &kp H        &kp J  &kp K      &kp L    &kp SEMICOLON
-&mt LEFT_SHIFT Z  &kp X         &kp C    &kp V          &kp B        &kp F14                   &kp F15                 &kp N        &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL         &kp LEFT_WIN  &kp F16  &kp BACKSPACE  &lt 2 ENTER  &lt_to_layer_0 3 LANG2    &lt_to_layer_0 3 LANG1  &lt 1 SPACE                             &kp LEFT_ALT
+&kp Q      &kp W         &kp E         &kp R    &kp T                                           &kp Y    &kp U  &kp I      &kp O    &kp P
+&kp A      &kp S         &kp D         &kp F    &kp G                           &kp F12         &kp H    &kp J  &kp K      &kp L    &kp SEMICOLON
+&kp Z      &kp X         &kp C         &kp V    &kp B        &kp LC(W)          &kp LEFT_SHIFT  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp TAB  &lt 1 SPACE  &lt 2 BACKSPACE    &lt 3 ENTER     &WINime                             &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
