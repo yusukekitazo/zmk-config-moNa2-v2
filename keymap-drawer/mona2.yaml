@@ -43,7 +43,7 @@ layers:
   - {t: ENTER, h: CURSOR1}
   - '&WINime'
   - ESCAPE
-  '5':
+  MOUSE:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -88,25 +88,25 @@ layers:
   - {t: ▽, type: trans}
   MARK1:
   - '!'
-  - '@'
+  - '['
   - '#'
   - $
   - '%'
+  - '='
   - ^
-  - '&'
+  - '"'
   - '*'
-  - '-'
-  - _
+  - (
   - BRIGHTNESS DEC
-  - BRI UP
+  - BRIGHTNESS INC
   - VOLUME DOWN
   - VOLUME UP
   - Alt+PRINTSCREEN
   - {t: ▽, type: trans}
-  - '&mkp MB3'
-  - '&mkp MB1'
-  - '&mkp MB2'
-  - '='
+  - Sft+0x87
+  - _
+  - ']'
+  - \
   - +
   - Ctl+Z
   - Ctl+X
@@ -115,8 +115,8 @@ layers:
   - Sft+A
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - F6
-  - F7
+  - '@'
+  - ''''
   - Sft+,
   - Sft+.
   - Sft+/
@@ -215,7 +215,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  '6':
+  SCROLL:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -303,7 +303,7 @@ layers:
   - BT CLR ALL
 combos:
 - p: [18, 19]
-  k: '6'
+  k: SCROLL
 - p: [17, 18, 19]
   k: '&mouse_gesture'
 - p: [37, 38]
