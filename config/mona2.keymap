@@ -38,7 +38,7 @@
         /* K+L: enter SCROLL layer (aerogu34と同じ設計) */
 
         scroll {
-            bindings = <&mo SCROLL>;
+            bindings = <&mo 5>;
             key-positions = <18 19>;
             timeout-ms = <50>;
             require-prior-idle-ms = <150>;
@@ -114,13 +114,13 @@
 &kp Q      &kp W         &kp E         &kp R    &kp T                                           &kp Y    &kp U  &kp I      &kp O    &kp P
 &kp A      &kp S         &kp D         &kp F    &kp G                           &kp F12         &kp H    &kp J  &kp K      &kp L    &kp SEMICOLON
 &kp Z      &kp X         &kp C         &kp V    &kp B        &kp LC(W)          &kp LEFT_SHIFT  &kp N    &kp M  &kp COMMA  &kp DOT  &kp SLASH
-&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp TAB  &lt 1 SPACE  &lt 2 BACKSPACE    &lt 3 ENTER     &WINime                             &kp ESCAPE
+&kp LCTRL  &kp LEFT_ALT  &kp LEFT_GUI  &kp TAB  &lt 2 SPACE  &lt 3 BACKSPACE    &lt 4 ENTER     &WINime                             &kp ESCAPE
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_1 {
+        MOUSE {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans    &trans    &trans
 &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &mkp MB1  &mkp MB2  &trans
@@ -131,7 +131,7 @@
             sensor-bindings = <&scroll_right_left>;
         };
 
-        layer_2 {
+        MARK1 {
             bindings = <
 &kp EXCLAMATION  &kp AT_SIGN  &kp POUND          &kp DOLLAR  &kp PERCENT                      &kp CARET  &kp AMPERSAND  &kp ASTERISK  &kp MINUS  &kp UNDERSCORE
 &kp GRAVE        &kp TILDE    &kp DOUBLE_QUOTES  &kp SQT     &trans                  &trans   &mkp MB3   &mkp MB1       &mkp MB2      &kp EQUAL  &kp PLUS
@@ -142,7 +142,7 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        layer_3 {
+        NUM1 {
             bindings = <
 &trans  &kp LC(LS(TAB))     &kp PRINTSCREEN         &kp LC(TAB)              &trans                                     &trans  &kp HOME        &kp UP_ARROW    &kp END          &trans
 &trans  &kp LG(LEFT_ARROW)  &kp LG(RIGHT_ARROW)     &kp LC(LG(LEFT_ARROW))   &kp LC(LG(RIGHT_ARROW))            &trans  &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans
@@ -153,7 +153,7 @@
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
         };
 
-        layer_4 {
+        CURSOR1 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
 &trans  &trans  &trans  &trans  &trans            &trans       &trans        &trans        &trans        &trans        &trans
@@ -164,26 +164,24 @@
             sensor-bindings = <&scroll_up_down>;
         };
 
-        MOUSE {
+        SCROLL {
             bindings = <
-&trans  &trans    &trans    &trans    &trans                    &trans  &trans    &trans    &trans    &trans
-&trans  &mkp MB3  &mkp MB2  &mkp MB1  &trans            &trans  &trans  &mkp MB1  &mkp MB2  &mkp MB3  &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans  &trans    &trans    &trans    &trans
-&trans  &trans    &trans    &trans    &trans  &trans    &trans  &trans                                &trans
+&trans  &trans  &trans  &trans  &trans                    &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans            &trans  &kp LEFT_SHIFT  &trans  &trans  &trans  &kp LEFT_CONTROL
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans          &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                                  &trans
             >;
 
             sensor-bindings = <&scroll_up_down>;
         };
 
-        SCROLL {
+        WIRELESS {
             bindings = <
-&trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans                          &trans
+&trans  &trans  &trans  &trans  &trans                         &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4
+&trans  &trans  &trans  &trans  &trans            &trans       &trans          &trans        &trans        &trans        &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans       &trans          &trans        &trans        &trans        &bt BT_CLR
+&trans  &trans  &trans  &trans  &trans  &trans    &bootloader  &studio_unlock                                            &bt BT_CLR_ALL
             >;
-
-            sensor-bindings = <&scroll_up_down>;
         };
     };
 };
