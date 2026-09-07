@@ -139,10 +139,10 @@
 
         NUM1 {
             bindings = <
-&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp N7      &kp N8       &kp N9         &kp N0
-&kp F1        &kp F2        &kp F3        &kp F4        &kp F5               &trans      &kp F6        &kp F7      &kp F8       &kp F9         &kp F12
-&kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LS(A)  &trans    &trans      &trans        &kp DELETE  &kp PAGE_UP  &kp PAGE_DOWN  &trans
-&trans        &trans        &trans        &trans        &trans     &trans    &kp INSERT  &kp LC(W)                                             &trans
+&kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                           &kp NUMBER_6  &kp N7  &kp N8  &kp N9  &kp N0
+&kp F1        &kp F2        &kp F3        &kp F4        &kp F5               &trans      &kp F6        &kp F7  &kp F8  &kp F9  &kp F12
+&kp LC(Z)     &kp LC(X)     &kp LC(C)     &kp LC(V)     &kp LS(A)  &trans    &trans      &trans        &trans  &trans  &trans  &trans
+&trans        &trans        &trans        &trans        &trans     &trans    &kp INSERT  &kp LC(W)                             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP>;
